@@ -1,0 +1,24 @@
+Tiya jain
+22070123126
+entc b2
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string name;
+    int count=0;
+    cout<<"Enter your name: ";
+    getline(cin,name);
+    for(int i=0; name[i]!='\0';i++){
+        count++;
+    }
+    cout<<"The lenght of the string is: "<<count;
+
+}
+
+output
+Enter your name: HELLO WORLD
+The lenght of the string is: 11
