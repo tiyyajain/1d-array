@@ -1,0 +1,36 @@
+Tiya jain
+22070123126
+entc b2
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string str1,str2;
+    cout<<" Enter the first string: ";
+    getline(cin,str1);
+    int len,i;
+    for(i=0; str1[i]!='\0';i++)
+    { 
+        len++;
+
+    }
+    int start=0;
+    int end = len-1;
+    while(start<end)
+    {
+        swap(str1[start],str1[end]);
+        start++;
+        end--;
+
+    }    
+    cout<<"The reverse string is :"<<str1;
+}
+
+output
+
+ Enter the first string: helloworld
+The reverse string is :dlrowolleh
+
